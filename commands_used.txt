@@ -1,0 +1,29 @@
+--This project is focused on laravel 8 fullcalendar--
+--Also used toaster on this project----
+
+
+---To create a project---
+composer create-project --prefer-dist laravel/laravel:^8.0 fullcalendar
+
+---To open project in browser---
+mv server.php index.php
+cp public/.htaccess .
+---open in browser---
+http://localhost/laravel/fullcalendar
+
+---To create model, migratation, and controller---
+php artisan make:model FullCalendar -mcr
+
+---To create table---
+php artisan migrate
+
+---To create table and insert some records---
+php artisan make:seeder FullCalendarTableSeeder
+php artisan migrate:refresh --seed
+
+
+
+
+
+---reference link---
+https://www.itsolutionstuff.com/post/laravel-8-fullcalendar-with-create-edit-delete-event-exampleexample.html
